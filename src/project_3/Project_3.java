@@ -16,6 +16,7 @@ public class Project_3
     {
        int [][] numbers ={ {20, 40, 60 },{ 80, 90, 100},{120, 140, 160} };
        getTotal(numbers);
+       int total = 0;
     }
    
 
@@ -32,6 +33,16 @@ public class Project_3
         System.out.println("The total of all of the values inthe array is: " + total);
     }
     
+    public static void getAverage(int[][] numbers)
+    {
+        int average = 0;
+        
+         for (int row = 0; row< numbers.length; row++)
+        {
+            for(int col = 0; col <numbers[row].length; col++)
+      
+    }
+            
 }
 
 
