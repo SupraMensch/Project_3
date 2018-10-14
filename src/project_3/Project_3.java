@@ -11,7 +11,7 @@ public class Project_3
     //  Main method initializing test data and calling demonstrations of methods
     public static void main(String[] args) 
     {
-       int [][] numbers ={ {20, 40, 60 },{ 80, 90, 100}, {120,140,160}};
+       int [][] numbers ={ {20, 40, 60 },{ 80, 90, 100}};
        getTotal(numbers);
        getAverage(numbers);
        getRowTotal(numbers, 0);
@@ -28,13 +28,13 @@ public class Project_3
         
         for (int row = 0; row< numbers.length; row++)
         {
-            for(int col = 0; col <numbers[row].length; col++)
+           for(int col = 0; col <numbers[row].length; col++)
                 total += numbers[row][col];
         }
-                System.out.println("The total of all of the values inthe array is: " + total);
+                System.out.println("The total of all of the values in the array is: " + total);
         return total;
     }
-    
+    // not sure what issue is
     // getAverage Method accepts array arg and returns the average of all of the values in the array
     public static int getAverage(int[][] numbers)
     {
@@ -54,14 +54,14 @@ public class Project_3
     //  GetRowTotal Method accepts array argument and an int associated with the row subscript to be totaled
     public static int getRowTotal(int[][] numbers, int row) 
     {
-    int total = 0;
+        int total = 0;
 
-    for (int col = 0; col < numbers[row].length; col++) 
-    {
-        total += numbers[row][col];
-    }
-    System.out.println("The total of row 0 is: " + total);
-    return total;
+        for (int col = 0; col < numbers[row].length; col++) 
+        {
+            total += numbers[row][col];
+        }
+        System.out.println("The total of row 0 is: " + total);
+        return total;
 }
     
 //  getColumnTotal Method accepts array and subscript to be totaled and displays outcome    
